@@ -1,0 +1,46 @@
+MiDaS_model_ckpt: Inpainting/MiDaS/model.pt
+anti_flickering: true
+background_thickness: 70
+background_thickness_2: 70
+context_thickness: 140
+context_thickness_2: 70
+crop_border: [0.03, 0.03, 0.05, 0.03]
+depth_edge_dilate: 10
+depth_edge_dilate_2: 5
+depth_edge_model_ckpt: Inpainting/checkpoints/edge-model.pth
+depth_feat_model_ckpt: Inpainting/checkpoints/depth-model.pth
+depth_folder: Output
+depth_format: .npy
+depth_threshold: 0.04
+discount_factor: 1.0
+ext_edge_threshold: 0.002
+extrapolate_border: true
+extrapolation_thickness: 60
+filter_size: [7, 7, 5, 5, 5]
+fps: 40
+gpu_ids: 0
+img_format: .jpg
+inference_video: true
+largest_size: 512
+load_ply: false
+log_depth: true
+longer_side_len: 1280
+mesh_folder: mesh
+num_frames: 400
+offscreen_rendering: false
+redundant_number: 12
+repeat_inpaint_edge: true
+require_midas: true
+rgb_feat_model_ckpt: Inpainting/checkpoints/color-model.pth
+save_ply: false
+sigma_r: 0.5
+sigma_s: 4.0
+sparse_iter: 5
+specific: ''
+src_folder: Input
+traj_types: [double-straight-line, double-straight-line, circle, circle]
+video_folder: video
+video_postfix: [dolly-zoom-in, zoom-in, circle, swing]
+x_shift_range: [0.0, 0.0, -0.02, -0.02]
+y_shift_range: [0.0, 0.0, -0.02, -0.0]
+z_shift_range: [-0.05, -0.05, -0.07, -0.07]
